@@ -34,8 +34,8 @@ class KITTI(BaseDataset):
         self.results_dir = os.path.join(cfg.save_dir, 'results')
 
     def get_sample_ids(self):
-        sample_set_name = 'train.txt' if self.phase == 'train' \
-            else 'val.txt' if self.phase == 'val' \
+        sample_set_name = 'train_20.txt' if self.phase == 'train' \
+            else 'val_20.txt' if self.phase == 'val' \
             else 'trainval.txt' if self.phase == 'trainval' \
             else None
 
